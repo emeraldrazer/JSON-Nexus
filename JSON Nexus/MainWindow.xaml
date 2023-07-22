@@ -1,0 +1,197 @@
+﻿<Window x:Class="JSON_Nexus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON_Nexus"
+        mc:Ignorable="d"
+        Title="JSON Nexus" Height="800" Width="1020" ResizeMode="CanMinimize">
+    <!--<Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Copy" Executed="CopyCommand_Executed" CanExecute="CopyCommand_CanExecute"/>
+        <CommandBinding Command="ApplicationCommands.Paste" Executed="PasteCommand_Executed" CanExecute="PasteCommand_CanExecute"/>
+    </Window.CommandBindings>-->
+    <Grid>
+        <TabControl>
+            <TabItem Header="Read JSON">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="locationOfJSON" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="800" FontFamily="Roboto" 
+                             FontSize="15" TextAlignment="Left" VerticalContentAlignment="Center" 
+                             GotFocus="LocationOfJSON_GotFocus" LostFocus="LocationOfJSON_LostFocus" 
+                             TextChanged="LocationOfJSON_TextChanged"
+                             Foreground="Gray"
+                             >C:/path/to/json or https://example.com/json</TextBox>
+                    <Button Click="OpenBTN" VerticalAlignment="Top" HorizontalAlignment="Right" Height="25" Width="90">Open</Button>
+                    <Button Click="ReadBTN" VerticalAlignment="Top" HorizontalAlignment="Right" Height="25" Margin="0,0,100,0" Width="90">Read</Button>
+                    <CheckBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,35,0,0" Name="enableTB" IsEnabled="False" Checked="EnableTB_Checked" Unchecked="EnableTB_Unchecked">Unlock For Editing</CheckBox>
+                    <Button Name="saveBTN" Click="saveBTN_Click" VerticalAlignment="Top" HorizontalAlignment="Left" IsEnabled="False" Height="25" Width="50" Margin="150,30,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Save</Button>
+
+                    <Button Name="findBTN" Click="FindBTN_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="50" Margin="210,30,0,0" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Find</Button>
+                    <TextBox Name="findObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" Height="25" Margin="270,30,0,0" IsEnabled="False" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+
+                    <Button Name="readPathBTN" Click="ReadPathBTN_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="70" Margin="380,30,0,0" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Read Path</Button>
+                    <TextBox Name="readObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Height="25" Margin="460,30,0,0" IsEnabled="False" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+
+                    <Button Name="ReplaceBTN" Click="ReplaceBTN_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="70" Margin="670,30,0,0" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Replace</Button>
+                    <TextBox Name="insteadOfObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Height="25" Margin="750,30,0,0" IsEnabled="False" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                    <Label Name="withtb" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,140,0" Foreground="Gray">With</Label>
+                    <TextBox Name="withObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Height="25" Margin="860,30,0,0" IsEnabled="False" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+
+                    <ScrollViewer Margin="0,60,0,0" >
+                        <TextBox Name="JsonData" Height="Auto" FontSize="15" HorizontalContentAlignment="Left" Focusable="True" TextChanged="JsonData_TextChanged" AcceptsReturn="True" IsReadOnly="True"/>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Create JSON">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock Margin="10,14,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="Name of property"/>
+                    <TextBox Name="nameOfProperty" 
+                             Margin="115,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top" 
+                             Height="25" Width="150" 
+                             HorizontalContentAlignment="Left" 
+                             VerticalContentAlignment="Center" ></TextBox>
+
+                    <TextBlock 
+                        Margin="270,14,0,0" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Text="Value of property"/>
+                    <TextBox 
+                        Name="valueOfProperty"
+                        Margin="370,10,0,0" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Height="25" Width="150" 
+                        HorizontalContentAlignment="Left" 
+                        VerticalContentAlignment="Center"/>
+
+                    <TextBlock 
+                        Margin="100,14,0,0" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Top" 
+                        Text="DateType"/>
+                    <ComboBox Name="dataTypeCBox" Margin="240,10,0,0" 
+                              HorizontalAlignment="Center" VerticalAlignment="Top" Height="25" Width="80" 
+                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                              FontSize="11">
+                        <ComboBoxItem Content="string"/>
+                        <ComboBoxItem Content="int"/>
+                        <ComboBoxItem Content="boolean"/>
+                        <ComboBoxItem Content="double"/>
+                        <ComboBoxItem Content="decimal"/>
+                        <ComboBoxItem Content="float"/>
+                    </ComboBox>
+
+                    <Button Name="AddItemBTN"
+                            Click="AddItemBTN_Click"
+                            Margin="0,10,230,0"
+                            Height="25" Width="100" 
+                            HorizontalAlignment="Right" 
+                            VerticalAlignment="Top"   
+                            VerticalContentAlignment="Center" 
+                            HorizontalContentAlignment="Center"
+                            Content="Add Value(s)"/>
+
+                    <Button Name="AddJsonObjectBTN"
+                            Click="AddJsonObjectBTN_Click"
+                            Margin="0,10,120,0"
+                            Height="25" Width="100" 
+                            HorizontalAlignment="Right" 
+                            VerticalAlignment="Top"   
+                            VerticalContentAlignment="Center" 
+                            HorizontalContentAlignment="Center"
+                            Content="Create Object"/>
+
+                    <Button Name="ConvertBTN"
+                            Click="ConvertBTN_Click"
+                            Margin="0,10,10,0"
+                            Height="25" Width="100" 
+                            HorizontalAlignment="Right" 
+                            VerticalAlignment="Top"   
+                            VerticalContentAlignment="Center" 
+                            HorizontalContentAlignment="Center"
+                            Content="Convert"/>
+
+                    <TextBlock Text="Commands" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="245,50,0,0"/>
+                    <TextBlock Text="JSON" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,50,245,0"/>
+
+                    <TextBox x:Name="itemstb" Margin="0,75,0,0" Width="490" HorizontalAlignment="Left" Focusable="True" IsReadOnly="True" TextWrapping="Wrap" />
+                    <TextBox x:Name="jsontb" Margin="0,75,0,0" Width="490" HorizontalAlignment="Right" Focusable="True" IsReadOnly="True" TextWrapping="Wrap" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Web Requests">
+                <Grid Background="#FFE5E5E5">
+
+                    <TextBox Name="urlTXT" Width="400" Height="25" 
+                         HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,15,0,0"/>
+                    <TextBlock Text="URL" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,40,0,0"/>
+
+                    <TextBox Name="authTXT" Width="400" Height="25" 
+                         HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                         HorizontalAlignment="Center" VerticalAlignment="Top" Margin="230,15,0,0"/>
+                    <TextBlock Text="Authorization Header" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="230,40,0,0"/>
+
+                    <ComboBox Name="RequestMethod" Width="80" Height="25" 
+                              HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                              HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,100,0">
+                        <ComboBoxItem Content="GET"/>
+                        <ComboBoxItem Content="POST"/>
+                        <ComboBoxItem Content="PUT"/>
+                        <ComboBoxItem Content="PATCH"/>
+                        <ComboBoxItem Content="DELETE"/>
+                        <ComboBoxItem Content="OPTIONS"/>
+                    </ComboBox>
+                    
+                    <Button Name="SendBTN" Width="80" Height="25"
+                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,10,0" Click="SendBTN_Click">Send Request</Button>
+
+                    <TextBox Margin="0,100,550,380" Name="headersTXT" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+                    <Button Margin="1,70,0,0" Name="AddDefaultHeaders"
+                            Width="120" Height="25" Click="AddDefaultHeaders_Click"
+                            VerticalAlignment="Top" HorizontalAlignment="Left"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Add Default Headers</Button>
+
+                    <TextBlock Text="Headers" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,80,0,0"/>
+
+                    <TextBox Margin="0,420,550,0" Name="bodyTXT" TextWrapping="Wrap" AcceptsReturn="True"/>
+                    
+                    <TextBlock Text="Body" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,400,0,0"/>
+                    <Button Width="100" Height="25" Name="LoadPayload" Click="LoadPayload_Click"
+                            HorizontalAlignment="Left" VerticalAlignment="Center"
+                            Margin="1,70,0,0">Load Payload</Button>
+
+                    <Button Name="AddCookies" Click="AddCookies_Click"
+                            Width="100" Height="25" 
+                            HorizontalAlignment="Center" VerticalAlignment="Top"
+                            Margin="0,70,202,0">Add Cookies</Button>
+
+                    <Button Name="ClearCookies" Click="ClearCookies_Click"
+                            Width="100" Height="25" 
+                            HorizontalAlignment="Center" VerticalAlignment="Top"
+                            Margin="0,70,-20,0">Clear Cookies</Button>
+
+                    <Button Name="Clear" Click="Clear_Click"
+                            Width="100" Height="25" 
+                            HorizontalAlignment="Right" VerticalAlignment="Top"
+                            Margin="0,70,1,0">Clear</Button>
+                    
+                    <ComboBox Name="BodyType" Width="80" Height="25" 
+                              HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                              HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,182,0">
+                        <ComboBoxItem Content="JSON"/>
+                        <ComboBoxItem Content="Form URL Encoded"/>
+                        <ComboBoxItem Content="Text / Plain"/>
+                    </ComboBox>
+
+                    <TextBox Margin="460,100,0,0" Name="responseTXT" IsReadOnly="True"/>
+                    <TextBlock Text="Response" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,250,0"/>
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

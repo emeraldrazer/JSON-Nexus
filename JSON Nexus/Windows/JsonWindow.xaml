@@ -1,0 +1,22 @@
+﻿<Window x:Class="JSON_Nexus.Windows.JsonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON_Nexus.Windows"
+        mc:Ignorable="d"
+        Title="JsonWindow" Height="700" Width="1000">
+    <Grid>
+        <CheckBox Name="closeOnSave" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="410,15,0,0" FontSize="12">Close on save</CheckBox>
+        <Button Name="SaveBTN" Width="100" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,10,0,0" Click="SaveBTN_Click">Save</Button>
+
+        <Button Name="ReplaceBTN" Click="ReplaceBTN_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="70" Margin="10,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Replace</Button>
+        <TextBox Name="insteadOfObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Height="25" Margin="90,10,0,0" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+        <Label Name="withtb" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,10,140,0">With</Label>
+        <TextBox Name="withObject" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Height="25" Margin="205,10,0,0" TextAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+
+        <ScrollViewer Margin="5,50,5,5" >
+            <TextBox Name="JsonData" Height="Auto" FontSize="16" HorizontalContentAlignment="Left" Focusable="True" AcceptsReturn="True"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

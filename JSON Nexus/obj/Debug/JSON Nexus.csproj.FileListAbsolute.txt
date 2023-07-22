@@ -1,0 +1,29 @@
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\JSON Nexus.exe.config
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\JSON Nexus.exe
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\JSON Nexus.pdb
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.csproj.AssemblyReference.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.csproj.SuggestedBindingRedirects.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\MainWindow.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\App.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus_MarkupCompile.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus_MarkupCompile.lref
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\MainWindow.baml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.g.resources
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON_Nexus.Properties.Resources.resources
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.csproj.GenerateResource.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.csproj.CoreCompileInputs.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.exe
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.pdb
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Memory.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Text.Json.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Buffers.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.ValueTuple.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.exe.config
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\Debug\JSON Nexus.csproj.CopyComplete
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\Debug\Newtonsoft.Json.xml

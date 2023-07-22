@@ -1,0 +1,35 @@
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\JSON Nexus.exe.config
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\JSON Nexus.exe
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\JSON Nexus.pdb
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\Newtonsoft.Json.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Memory.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Text.Json.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Numerics.Vectors.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Buffers.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Text.Encodings.Web.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.ValueTuple.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\bin\x64\Release\Newtonsoft.Json.xml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.csproj.AssemblyReference.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.csproj.SuggestedBindingRedirects.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.exe.config
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\AddCookies.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\CreateObjectWindow.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\JsonWindow.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\MainWindow.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\App.g.cs
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus_MarkupCompile.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus_MarkupCompile.lref
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\AddCookies.baml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\CreateObjectWindow.baml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\Windows\JsonWindow.baml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\MainWindow.baml
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.g.resources
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON_Nexus.Properties.Resources.resources
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.csproj.GenerateResource.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.csproj.CoreCompileInputs.cache
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.csproj.CopyComplete
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.exe
+C:\Users\Marko29\source\repos\JSON Nexus\JSON Nexus\obj\x64\Release\JSON Nexus.pdb
